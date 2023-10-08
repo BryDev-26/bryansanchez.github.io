@@ -1,0 +1,169 @@
+
+:root {
+    --color-dark-alpha: #0807056e;
+    --color-brown-alpha: #3e312c6c;
+}
+
+body{
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*No repetir la imagen*/
+    background-attachment: fixed;
+    /*Fijar la imagen en su posición*/
+    background-position: center;
+}
+.item-contend{
+    box-shadow: 10px 10px 5px burlywood;
+}
+.item-contend:hover{
+    transform: scale(1.05);
+}
+
+header{
+    background-color: #b79a8851;
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 9px 5px #413532;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    background:var(--color-green-alpha);
+    border-radius: 10px;
+    border-color: burlywood;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color: burlywood;
+}
+#subir{
+    margin-top: 10px;
+}
+input::file-selector-button {
+    color: white;
+    padding: 0.5em;
+    background: #403531;
+    border-color: black;
+    border-radius: 3px;
+}
+nav ul{
+    list-style-type: none; /*Eliminar los puntos del nav ul*/
+    padding: 0;
+}
+nav ul li{
+    display: inline;/*Elementos en linea(horizontal)*/
+    margin-right: 20px;
+}
+section{
+    padding: 20px;
+}
+
+.item-contend{
+    border: 2px solid rgba(222, 184, 135, 0.744);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: var(--color-dark-alpha);
+}
+.item img{
+    max-width: 100%;
+    width: 170px;
+}
+img:hover{
+    transform: scale(1.05);
+}
+#estado{
+    text-align: left;
+}
+footer{
+    color: black;
+    font-family: Garamond;
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+    margin: 20px ;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/*Css para formulario*/
+label{
+    padding-left: 30px;
+    
+}
+input{
+    width: 300px;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+form{
+    padding: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+.item-cont{
+    border: 2px solid rgba(222, 184, 135, 0.744);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    background-color: var(--color-dark-alpha);
+}
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-formulario {
+    background-color: var(--color-dark-alpha);
+    color: white;
+}
+::placeholder {
+    color: burlywood;
+    opacity: 1; 
+}
+.checkbox-container,
+.radio-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.checkbox-container input[type="checkbox"],
+.radio-container input[type="radio"] {
+    margin-right: 5px;
+}
+@media screen and (max-width: 768px) {
+    #menu {
+    justify-content: space-around;
+    }
+}
+@media screen and (max-width: 768px) {
+    .item-cont {
+        width: 100%;
+    }
+    input,
+    select,
+    textarea {
+    margin-bottom: 10px;
+    }
+}

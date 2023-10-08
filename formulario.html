@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>MI WEB</title>
+</head>
+
+<body>
+    <h1>FORMULARIO DE REGISTRO</h1>
+    <div id="contenedor">
+        <div id="izquierda" class="formulario">
+            <form method="post" action="#" id="miFormulario">
+                <!--FORMULARIO PARA NOMBRES-->
+                <label for="">Nombres: </label>
+                <input maxlength="50" placeholder="Ej. Bryan Smick" type="text" name="nombre" id="nombre">
+                <span id="nombreError" style="color: red; font-size: medium; font-family: Dejavu Sans;"></span>
+                <!--FORMULARIO PARA APELLIDOS-->
+                <label for="">Apellidos: </label>
+                <input maxlength="50" placeholder="Ej.Sanchez García" type="text" name="apellido" id="apellido">
+                <span id="apellidoError" style="color: red; font-size: medium; font-family: Dejavu Sans;"></span>
+                <!--FORMULARIO PARA CORREO-->
+                <label for="">Correo Electronico: </label>
+                <input placeholder="alguien@gmail.com" type="email" name="email" id="email">
+                <span id="emailError" style="color: red; font-size: medium; font-family: Dejavu Sans;"></span>
+                <!--FURMULARIO SEXO-->
+                <label for="">Sexo: </label>
+                <input type="radio" name="ec" value="S" id="estado">Mujer
+                <input style="margin: 10px;" type="radio" name="ec" value="C" id="estado">Hombre
+                <span id="estadoError" style="color: red; font-size: medium; font-family: Dejavu Sans;"></span>
+                <!--FORMULARIO CIUDAD-->
+                <label for="">Cuidad: </label>
+                <select name="carreras" id="sele">
+                    <option value="">Seleccionar</option>
+                    <option value="is">Alicante</option>
+                    <option value="su">Madrid</option>
+                    <option value="em">Sevilla</option>
+                    <option value="dg">Valencia</option>
+                </select>
+                <span id="selError" style="color: red; font-size: medium; font-family: Dejavu Sans;"></span>
+                <!--FURMULARIO PARA COMENTARIOS-->
+                <label style="margin: 20px;" id="subir" for="">Comentarios: </label>
+                <textarea id="comentario" name="txa_comentario" maxlength="20" rows="4" cols="40"
+                    placeholder="Ingrese un comentario"></textarea>
+                <br><span id="comError" style="color: red; font-size: medium; font-family: Dejavu Sans;"></span>
+                <!--FORMULARIO PARA CHECKBOX-->
+                <label style="margin: 20px;" for="check">Deseo recibir información
+                    <input type="checkbox" name="checked" id="check">
+                    <span id="checkError" style="color: red; font-size: medium; font-family: Dejavu Sans;"></span>
+                </label>
+                <label style="margin: 20px;" for="check">Declaro haber leido y aceptar las condiciones generales del
+                    programa y la normativa sobre protección de datos.
+                    <input type="checkbox" name="checkedbox" id="checkbox">
+                    <span id="checkbError" style="color: red; font-size: medium; font-family: Dejavu Sans;"></span>
+                </label>
+    
+                <button class="buttonh" type="submit">Enviar</button>
+            </form>
+        </div>
+        <div id="derecha" class="media">
+            <p style="color: aqua;">VIDEO HTML</p>
+            <iframe width="350" height="255" src="https://www.youtube.com/embed/ok-plXXHlWw?si=16-6dQyKJdmC4JgO"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        
+    </div>
+</body>
+<script src="JS/action.js"></script>
+
+</html>

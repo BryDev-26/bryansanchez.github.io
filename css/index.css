@@ -1,0 +1,122 @@
+html, body{
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  background: url(fondo-index.jpg) center / cover no-repeat fixed;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+}
+
+.texto-principal{
+  text-align: center;
+}
+
+.card-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card-Lado1, .card-Lado2 {
+    position: relative;
+    width: 350px;
+    margin-right: 2%;
+    aspect-ratio: 16/9;
+    background-color: #1118a67f;
+    border-radius: 10px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #0035e280;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-Lado1 img, .card-Lado2 img {
+    width: 68px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-Lado1:hover, .card-Lado2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 67, 225, 0.663);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #12306984;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-Lado1:hover .card__content, .card-Lado2:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.card-Lado1:hover img, .card-Lado2:hover img {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 10px;
+    font-size: 12px;
+    color: #9d9d9d;
+    line-height: 1.4;
+}
+a {
+  text-decoration: none;
+  color: #ababab;
+}
+
+.card__button {
+    padding: 15px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #999999;
+    color: #333;
+}
+.card__button:hover{
+  background-color: #0234aba9;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .card__title {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .card__description {
+        font-size: 14px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+    .card-principal {
+      flex-direction: column; /* Añade esto */
+  }
+  .card-Lado1, .card-Lado2 {
+    margin-bottom: 20px; /* Añade esto */
+}
+}

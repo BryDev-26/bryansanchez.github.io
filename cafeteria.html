@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-cafe.css">
+    <title>Cafetería De Café</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Menú</li>
+                <li>Pedido en Línea</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+    <section id="menu">
+        <h2 style="color: black;">Menú</h2>
+        <div id="cafe" class="item-contend">
+            <img src="img/cafe-latte.png" alt="Imagen de Café" width="125px">
+            <h3><b>Café Latte</b></h3>
+            <p><b>Un delicioso café con leche y espreso</b></p>
+            <p><b>S/ 25.00</b></p>
+            <button>Agregar al carrito</button>
+        </div>
+    </section>
+    <section id="menu">
+        <div id="cafe" class="item-contend">
+            <img src="img/capuccino.png" alt="Imagen de Capuccino" width="125px">
+            <h3><b>Café Capuccino</b></h3>
+            <p><b>Un delicioso café con leche y con espuma</b></p>
+            <p><b>S/ 25.00</b></p>
+            <button>Agregar al carrito</button>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2 style="color: white;">Formulario</h2>
+        <div class="item-cont">
+            <!--Ubicado el formulario-->
+            <form action="guardar.php" method="post">
+                <label for="txt_nombres">Nombres: </label>
+                <input class="input-formulario" type="text" name="txt_nombres" id="txt_nombres" placeholder="Ingresa tu nombre" required>
+
+                <label for="txt_email">Correo Electronico: </label>
+                <input class="input-formulario" type="email" name="txt_email" id="txt_email" placeholder="alguien@gmail.com" required>
+
+                <label for="txt_edad">Edad: </label>
+                <input class="input-formulario" type="number" name="txt_edad" id="txt_edad" min="8" max="15" placeholder="Ingrese su edad"
+                    required>
+
+                <label for="txt_contraseña">Contraseña: </label>
+                <input class="input-formulario" type="password" name="txt_contraseña" id="txt_contraseña" placeholder="Ingrese su contraseña"
+                    required>
+
+                <div class="checkbox-ubi">
+                    <label for="check">Aceptar términos</label>
+                <input type="checkbox" name="check" id="check-input">
+                </div>
+
+                <div id="estado">
+                <label for="">Estado civil: </label> <br>
+                <input type="radio" name="ec" value="S">Soltero <br>
+                <input type="radio" name="ec" value="C">Casado <br>
+                <input type="radio" name="ec" value="V">Viudo <br>
+                <input type="radio" name="ec" value="D">Divorciado <br>
+                </div>
+
+                <label id="subir" for="">Subir CV:</label>
+                <input type="file" name="cv" id="subir"><br>
+
+                <label id="subir" for="">Carreras: </label>
+                <select name="slc_carreras" id="subir">
+                    <option value="">Seleccionar</option>
+                    <option value="is">Ing. Software con IA</option>
+                    <option value="su">Soldadura Universal</option>
+                    <option value="em">Estructuras Metalicas</option>
+                    <option value="dg">Diseño Gráfico</option>
+                    <option value="ai">Administración Industrial</option>
+                </select><br>
+
+                <label id="subir" for="">Comentarios: </label>
+                <textarea id="subir" name="txa_comentario" maxlength="20" rows="4" cols="40"
+                    placeholder="Ingrese un comentario"></textarea><br>
+
+                <button id="subir" type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </section>
+    <script src="js/move.js"></script>
+</body>
+<footer>
+    <p>Echo por: Bryan Smick Sanchez Garcia</p>
+    <p>&copy; 2023 Cafetería De Café</p>
+</footer>
+
+</html>
